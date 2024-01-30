@@ -1,0 +1,9 @@
+i) Create two beans ProductService and ProductRepository . ProductRepository should be auto-configured in ProductService using autowiring.
+
+ii) Create two beans Car and Engine . Car depends on engine. Define appropriate scopes for them.
+
+iii) Create interface PaymentProcessor which is implemented by two classes CreditCardProcessor and PaytmProcessor. Create class OrderService having one field of type PaymentProcessor. PaymentProcessor field should be automatically injected and resolved in OrderService. Print "New (ClassName) bean created" in constructor of each class. Initialize IoC container with eager loading.
+	
+iv) Create parent class Device(String id, String brand) and two subclasses Laptop(String memory) and Mobile(String memory, List<String> suppportedNetworks). Provide property values with @Value annotation. Define IoC container of your choice. Create one object/bean for Mobile and Laptop each and print all property values with getter or toString method.
+
+v) Create Class Employee(String id, String name, Double salary) and demonstrate bean lifecycle(init and destroy) by printing "Employee bean initialized" and "Employee bean destroyed". Create employee object. Use IoC container of your choice.
